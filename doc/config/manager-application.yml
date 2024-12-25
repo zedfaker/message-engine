@@ -1,0 +1,36 @@
+server:
+  port: :8080
+  mode: debug
+db:
+  # 数据库类型
+  type: mysql
+  mysql:
+    # 数据库连接地址
+    url: 119.45.34.108:3306
+    # 数据库连接后缀
+    suffix: useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    # 数据库名称
+    database: ipr
+    # 数据库用户名
+    username: root
+    # 数据库密码
+    password: benang2024
+    # 数据库连接池最大连接数
+    maxOpen: 10
+    # 数据库连接池最大空闲数
+    maxIdle: 10
+    # 数据库连接池最大生命周期，单位秒
+    maxLifeTime: 300
+    # 数据库连接池最大空闲时间，单位秒
+    maxIdleTime: 3600
+cache:
+  type: redis
+  redis:
+    # 环境类型single为单机，cluster为集群
+    mode: single
+    # 如果是集群，则多个地址用逗号隔开
+    host: 119.45.34.108:6379
+    # 密码
+    password: benang2024
+    # 数据库
+    database: 0
